@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claw Spot — Press Kit | Minsky Games Workshop</title>
+  <meta name="description" content="Press kit for Claw Spot, a calm Queens-style logic puzzle with a cosy pet companion by Minsky Games Workshop (Nottingham, UK).">
+  <style>
+    :root {
+      --bg: #fffaf4;
+      --surface: #ffffff;
+      --ink: #1f2428;
+      --muted: #5a636c;
+      --border: #e8dfd3;
+      --accent: #2c6e58;
+      --accent-soft: #eaf4ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
+    .topbar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 16px; }
+    .hero {
+      display: grid; grid-template-columns: 88px 1fr; gap: 20px; align-items: center;
+      margin-bottom: 24px;
+    }
+    .hero img.icon {
+      width: 88px; height: 88px; border-radius: 20px; border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .hero h1 { margin: 0 0 4px; font-size: 2rem; line-height: 1.2; }
+    .hero .sub { margin: 0; color: var(--muted); }
+    .feature-graphic {
+      width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--border);
+      display: block; margin-bottom: 32px; background: var(--surface);
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 0; }
+    .btn {
+      display: inline-block; padding: 9px 16px; border-radius: 8px; font-weight: 600;
+      border: 1px solid var(--accent); background: var(--accent); color: #fff;
+    }
+    .btn.secondary { background: var(--surface); color: var(--accent); }
+    .grid-2 { display: grid; grid-template-columns: 310px 1fr; gap: 28px; align-items: start; }
+    @media (max-width: 780px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .hero { grid-template-columns: 68px 1fr; }
+      .hero img.icon { width: 68px; height: 68px; }
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px 22px; margin-bottom: 22px;
+    }
+    h2 { margin-top: 0; font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    h3 { margin: 18px 0 8px; font-size: 1.05rem; }
+    dl.facts { margin: 0; }
+    dl.facts dt { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-top: 12px; }
+    dl.facts dt:first-child { margin-top: 0; }
+    dl.facts dd { margin: 2px 0 0; word-break: break-word; }
+    ul { padding-left: 20px; }
+    li + li { margin-top: 6px; }
+    .pitch-box {
+      background: var(--accent-soft); border-left: 4px solid var(--accent);
+      padding: 12px 16px; border-radius: 0 8px 8px 0; font-weight: 500;
+    }
+    .screens {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 18px;
+    }
+    .shot {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 12px; text-align: center;
+    }
+    .shot img {
+      width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); display: block;
+    }
+    .shot .cap { margin: 10px 0 6px; font-weight: 600; font-size: 0.92rem; }
+    .shot .meta { font-size: 0.82rem; color: var(--muted); }
+    .brand-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;
+      margin-top: 18px;
+    }
+    .brand-item {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 16px; text-align: center;
+    }
+    .brand-item img { max-width: 100%; max-height: 150px; object-fit: contain; border-radius: 8px; }
+    footer {
+      margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--border);
+      font-size: 0.9rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div><a href="/">&larr; Minsky Games Workshop</a></div>
+      <nav class="nav">
+        <a href="#factsheet">Factsheet</a>
+        <a href="#description">Descriptions</a>
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots &amp; Art</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <header class="hero">
+      <img class="icon" src="images/play-icon-512.png" alt="Claw Spot app icon">
+      <div>
+        <h1>Claw Spot — Press Kit</h1>
+        <p class="sub">A calm Queens-style logic puzzle with a cosy pet companion &middot; Minsky Games Workshop</p>
+        <div class="cta-row">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.minskygames.clawspot">View on Google Play</a>
+          <a class="btn secondary" href="mailto:curtis.wong.uk@gmail.com?subject=Claw%20Spot%20Press%20Enquiry">Email Press Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <img class="feature-graphic" src="images/play-feature-graphic-1024x500.png" alt="Claw Spot feature graphic">
+
+    <div class="grid-2">
+      <aside id="factsheet" class="card">
+        <h2>Factsheet</h2>
+        <dl class="facts">
+          <dt>Developer</dt>
+          <dd>Minsky Games Workshop<br>Solo developer: Kim Lung Wong<br>Based in Nottingham, UK</dd>
+
+          <dt>Release Date</dt>
+          <dd>November 2026</dd>
+
+          <dt>Platform</dt>
+          <dd>Android (Google Play)<br><code>com.minskygames.clawspot</code></dd>
+
+          <dt>Price &amp; Monetisation</dt>
+          <dd>Free with ads (banner, occasional between-level ads from level 5, and optional rewarded ads). Optional one-time purchase removes forced ads.</dd>
+
+          <dt>Offline Play</dt>
+          <dd>100% playable offline; no login or account required</dd>
+
+          <dt>Languages (16)</dt>
+          <dd>English, Spanish, Portuguese (Brazil), Portuguese (Portugal), French, German, Italian, Dutch, Polish, Russian, Swedish, Turkish, Japanese, Korean, Simplified Chinese, Traditional Chinese</dd>
+
+          <dt>Google Play Link</dt>
+          <dd><a href="https://play.google.com/store/apps/details?id=com.minskygames.clawspot">play.google.com/store/apps/details?id=com.minskygames.clawspot</a></dd>
+
+          <dt>Website</dt>
+          <dd><a href="https://curtiswonguk-dev.github.io">curtiswonguk-dev.github.io</a></dd>
+
+          <dt>Privacy Policy</dt>
+          <dd><a href="https://curtiswonguk-dev.github.io/claw-spot-site/privacy.html">Privacy policy</a></dd>
+
+          <dt>Press Contact</dt>
+          <dd><a href="mailto:curtis.wong.uk@gmail.com">curtis.wong.uk@gmail.com</a></dd>
+        </dl>
+      </aside>
+
+      <main>
+        <section id="description" class="card">
+          <h2>Descriptions</h2>
+          <h3>Short Description</h3>
+          <p class="pitch-box">A Queens-style logic puzzle with a cosy pet companion. Play fully offline.</p>
+
+          <h3>Long Description</h3>
+          <p>
+            <strong>Claw Spot</strong> is a calm, offline-first Queens-style logic grid puzzle for Android, paired with a cosy virtual pet waiting in the nest. Designed by solo developer Kim Lung Wong at Minsky Games Workshop in Nottingham, UK, it offers 1,000 handcrafted campaign levels that scale from quick 5&times;5 tutorials up to 12&times;12 expert boards.
+          </p>
+          <p>
+            The rules are simple to grasp and deeply satisfying to deduce: place exactly one claw in every row, every column, and every coloured region, with no two claws touching—horizontally, vertically, or diagonally. There are no countdown timers rushing the player and no guessing required. Tap a cell to cycle through ✕ (blocked) and ? (maybe), hold to commit a claw, or enable optional auto-marking in Settings so blocked cells cross out automatically.
+          </p>
+          <p>
+            Between puzzles, players visit the nest to care for their chosen cat or dog by feeding, playing, or sharing a snack. Keeping the companion happy increases the nest level and charges <strong>Pet Power</strong>, which lets players place temporary draft claws on tricky boards without risking a heart. Earning new best star ratings awards coins that unlock hint charges or the warm dusk <strong>Night board</strong> theme in the Shop.
+          </p>
+        </section>
+
+        <section id="features" class="card">
+          <h2>Key Features</h2>
+          <ul>
+            <li><strong>1,000 campaign puzzles:</strong> Progress from 5&times;5 Tutorial grids through Easy, Medium, Hard, and Expert boards up to 12&times;12.</li>
+            <li><strong>Pure deduction, zero timers:</strong> Every board is solvable by logic alone, with tap-to-mark (✕ / ?), hold-to-place, optional auto-mark, Undo, and Restart.</li>
+            <li><strong>Cosy cat or dog companion:</strong> Care for a cat or dog in the nest; happiness levels up the nest and fuels Pet Power for risk-free draft claws.</li>
+            <li><strong>Stars, coins &amp; Night board:</strong> Earn up to 3 stars per puzzle, collect coins on new best clears (plus an optional daily Shop ad), and unlock the warm dusk Night board theme.</li>
+            <li><strong>100% offline &amp; private:</strong> No account, no login, and local-only save data—playable anywhere on flights or commutes.</li>
+            <li><strong>16 languages built in:</strong> Instant language switching in Settings across 16 supported languages, with quiet piano music and optional haptics.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <section id="screenshots" class="card">
+      <h2>Screenshots &amp; Visual Assets</h2>
+      <p>Click any image or download link below to save high-resolution PNG files for editorial use.</p>
+
+      <h3>In-Game Screenshots</h3>
+      <div class="screens">
+        <div class="shot">
+          <a href="images/home.png" target="_blank"><img src="images/home.png" alt="Claw Spot home screen"></a>
+          <div class="cap">Home Screen</div>
+          <div class="meta">827 &times; 1828 PNG &middot; <a href="images/home.png" download>Download</a></div>
+        </div>
+        <div class="shot">
+          <a href="images/mid-puzzle.png" target="_blank"><img src="images/mid-puzzle.png" alt="Claw Spot mid-puzzle gameplay"></a>
+          <div class="cap">Mid-Puzzle Gameplay</div>
+          <div class="meta">827 &times; 1828 PNG &middot; <a href="images/mid-puzzle.png" download>Download</a></div>
+        </div>
+        <div class="shot">
+          <a href="images/nest.png" target="_blank"><img src="images/nest.png" alt="Claw Spot pet nest"></a>
+          <div class="cap">Pet Nest</div>
+          <div class="meta">827 &times; 1828 PNG &middot; <a href="images/nest.png" download>Download</a></div>
+        </div>
+        <div class="shot">
+          <a href="images/win.png" target="_blank"><img src="images/win.png" alt="Claw Spot level win screen"></a>
+          <div class="cap">Puzzle Cleared</div>
+          <div class="meta">827 &times; 1660 PNG &middot; <a href="images/win.png" download>Download</a></div>
+        </div>
+      </div>
+
+      <h3>Feature Graphic, App Icon &amp; Studio Logo</h3>
+      <div class="brand-grid">
+        <div class="brand-item">
+          <a href="images/play-feature-graphic-1024x500.png" target="_blank"><img src="images/play-feature-graphic-1024x500.png" alt="Feature graphic"></a>
+          <div class="cap">Feature Graphic</div>
+          <div class="meta">1024 &times; 500 PNG &middot; <a href="images/play-feature-graphic-1024x500.png" download>Download</a></div>
+        </div>
+        <div class="brand-item">
+          <a href="images/play-icon-512.png" target="_blank"><img src="images/play-icon-512.png" alt="Claw Spot icon"></a>
+          <div class="cap">App Icon</div>
+          <div class="meta">512 &times; 512 PNG &middot; <a href="images/play-icon-512.png" download>Download</a></div>
+        </div>
+        <div class="brand-item">
+          <a href="images/minsky-games-workshop-logo.png" target="_blank"><img src="images/minsky-games-workshop-logo.png" alt="Minsky Games Workshop logo"></a>
+          <div class="cap">Minsky Games Workshop Logo</div>
+          <div class="meta">600 &times; 600 PNG &middot; <a href="images/minsky-games-workshop-logo.png" download>Download</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>About the Studio &amp; Contact</h2>
+      <p>
+        <strong>Minsky Games Workshop</strong> is an independent solo game studio based in Nottingham, United Kingdom, founded by developer Kim Lung Wong. Claw Spot is the studio's debut Android release, focused on calm, tactile logic games you can enjoy offline.
+      </p>
+      <p>
+        For review enquiries, interviews, or additional assets, email <a href="mailto:curtis.wong.uk@gmail.com">curtis.wong.uk@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Minsky Games Workshop</span>
+      <span><a href="https://curtiswonguk-dev.github.io">Home</a> &middot; <a href="https://curtiswonguk-dev.github.io/claw-spot-site/privacy.html">Privacy policy</a></span>
+    </footer>
+  </div>
+</body>
+</html>
